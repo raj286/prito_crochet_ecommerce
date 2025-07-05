@@ -236,8 +236,8 @@ This project is open source and available under the [MIT License](LICENSE).
 ## 📞 Support
 
 For support or questions, please contact:
-- Email: hello@pritoscrochet.com
-- Phone: +1 (555) 123-4567
+- Email: primto79@gmail.com
+- Phone: +91 7099102729 
 
 ---
 
