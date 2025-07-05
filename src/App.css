@@ -1,7 +1,163 @@
+.smoke-fade-in {
+  animation: smoke-fade-in 1.6s cubic-bezier(0.4,0,0.2,1) both;
+}
+
+@keyframes smoke-fade-in {
+  0% {
+    opacity: 0;
+    filter: blur(24px);
+  }
+  60% {
+    opacity: 0.7;
+    filter: blur(8px);
+  }
+  80% {
+    opacity: 1;
+    filter: blur(2px);
+  }
+  100% {
+    opacity: 1;
+    filter: blur(0);
+  }
+}
+
 .App {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  background: linear-gradient(135deg, rgba(255, 240, 245, 0.6) 0%, rgba(252, 228, 236, 0.6) 50%, rgba(248, 187, 217, 0.6) 100%);
+  position: relative;
+  animation: smoke-fade-in 1.6s cubic-bezier(0.4,0,0.2,1) both;
+}
+
+/* Floating cute elements */
+.App .floating-element-1 {
+  position: fixed;
+  top: 10%;
+  left: 5%;
+  font-size: 3rem;
+  opacity: 0.4;
+  animation: float 6s ease-in-out infinite;
+  z-index: 1;
+  pointer-events: none;
+  color: var(--primary-color);
+}
+
+.App .floating-element-2 {
+  position: fixed;
+  top: 20%;
+  right: 10%;
+  font-size: 2.5rem;
+  opacity: 0.4;
+  animation: float 8s ease-in-out infinite reverse;
+  z-index: 1;
+  pointer-events: none;
+  color: var(--accent-color);
+}
+
+.App .floating-element-3 {
+  position: fixed;
+  top: 60%;
+  left: 15%;
+  font-size: 2rem;
+  opacity: 0.3;
+  animation: float 7s ease-in-out infinite;
+  z-index: 1;
+  pointer-events: none;
+  color: var(--primary-color);
+}
+
+.App .floating-element-4 {
+  position: fixed;
+  top: 40%;
+  right: 20%;
+  font-size: 1.8rem;
+  opacity: 0.3;
+  animation: float 9s ease-in-out infinite reverse;
+  z-index: 1;
+  pointer-events: none;
+  color: var(--accent-color);
+}
+
+.App .floating-element-5 {
+  position: fixed;
+  top: 25%;
+  left: 75%;
+  font-size: 2.2rem;
+  opacity: 0.4;
+  animation: float 10s ease-in-out infinite;
+  z-index: 1;
+  pointer-events: none;
+  color: var(--primary-color);
+}
+
+.App .floating-element-6 {
+  position: fixed;
+  top: 60%;
+  left: 15%;
+  font-size: 2.5rem;
+  opacity: 0.3;
+  animation: float 15s ease-in-out infinite reverse;
+  z-index: 1;
+  pointer-events: none;
+  color: var(--accent-color);
+}
+
+.App .floating-element-7 {
+  position: fixed;
+  top: 45%;
+  right: 30%;
+  font-size: 1.9rem;
+  opacity: 0.4;
+  animation: float 11s ease-in-out infinite;
+  z-index: 1;
+  pointer-events: none;
+  color: var(--primary-color);
+}
+
+.App .floating-element-8 {
+  position: fixed;
+  top: 70%;
+  left: 60%;
+  font-size: 2.1rem;
+  opacity: 0.3;
+  animation: float 13s ease-in-out infinite reverse;
+  z-index: 1;
+  pointer-events: none;
+  color: var(--accent-color);
+}
+
+.App .floating-element-9 {
+  position: fixed;
+  top: 35%;
+  left: 45%;
+  font-size: 1.7rem;
+  opacity: 0.4;
+  animation: float 9s ease-in-out infinite;
+  z-index: 1;
+  pointer-events: none;
+  color: var(--primary-color);
+}
+
+.App .floating-element-10 {
+  position: fixed;
+  top: 85%;
+  right: 40%;
+  font-size: 2.3rem;
+  opacity: 0.3;
+  animation: float 14s ease-in-out infinite reverse;
+  z-index: 1;
+  pointer-events: none;
+  color: var(--accent-color);
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-20px) rotate(10deg);
+  }
 }
 
 .modal-overlay {
@@ -10,7 +166,8 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5);
+  background: linear-gradient(135deg, rgba(233, 30, 99, 0.3) 0%, rgba(156, 39, 176, 0.4) 50%, rgba(233, 30, 99, 0.3) 100%);
+  backdrop-filter: blur(8px);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -19,13 +176,14 @@
 }
 
 .modal-content {
-  background: var(--white);
+  background: linear-gradient(145deg, var(--white) 0%, var(--pink-light) 100%);
   border-radius: var(--border-radius-xl);
   max-width: 90vw;
   max-height: 90vh;
   overflow-y: auto;
   position: relative;
   box-shadow: var(--shadow-xl);
+  border: 2px solid var(--purple-medium);
 }
 
 .modal-close {
@@ -54,10 +212,11 @@
   display: inline-block;
   width: 2rem;
   height: 2rem;
-  border: 3px solid var(--gray-200);
+  border: 3px solid var(--pink-light);
   border-radius: 50%;
   border-top-color: var(--primary-color);
   animation: spin 1s ease-in-out infinite;
+  box-shadow: 0 0 10px rgba(233, 30, 99, 0.3);
 }
 
 @keyframes spin {

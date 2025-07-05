@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Heart, Star, Users, Award } from 'lucide-react';
 import './About.css';
+import crochet5 from '../assets/crochet5.jpeg';
 
 const About = () => {
   const stats = [
@@ -66,7 +67,16 @@ const About = () => {
         </section>
 
         {/* Story Section */}
-        <section className="story-section">
+        <section
+          className="story-section"
+          style={{
+            background: `linear-gradient(135deg, #FFFDE7 0%, #FCE4EC 100%), url(${crochet5}) center center/cover no-repeat`,
+            backgroundBlendMode: 'lighten',
+            borderRadius: '2rem',
+            boxShadow: '0 4px 32px 0 rgba(206, 147, 216, 0.08)',
+            margin: '2rem 0',
+          }}
+        >
           <div className="story-content">
             <motion.div 
               className="story-text"
@@ -101,7 +111,7 @@ const About = () => {
               viewport={{ once: true }}
             >
               <img 
-                src="https://images.unsplash.com/photo-1582735689369-4fe89db7114c?w=500&h=600&fit=crop" 
+                src="/crochet4.jpg"
                 alt="Crochet workspace"
               />
             </motion.div>

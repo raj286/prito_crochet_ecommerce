@@ -6,48 +6,81 @@
 }
 
 body {
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Nunito', 'Inter', Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   line-height: 1.6;
-  color: #333;
-  background-color: var(--white);
+  color: var(--text-primary);
+  background: var(--gray-100);
+  background-attachment: fixed;
+  min-height: 100vh;
+  position: relative;
+}
+
+/* Add pinkish-purple background pattern */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: 
+    radial-gradient(circle at 20% 80%, rgba(233, 30, 99, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(156, 39, 176, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 40% 40%, rgba(224, 176, 255, 0.05) 0%, transparent 50%);
+  pointer-events: none;
+  z-index: -1;
 }
 
 /* Custom Properties */
 :root {
-  --primary-color: #8B5FBF;
-  --primary-dark: #6B46C1;
-  --secondary-color: #F7FAFC;
-  --accent-color: #F56565;
-  --text-primary: #1A202C;
-  --text-secondary: #4A5568;
-  --text-light: #718096;
-  --white: #FFFFFF;
-  --gray-50: #F7FAFC;
-  --gray-100: #EDF2F7;
-  --gray-200: #E2E8F0;
-  --gray-300: #CBD5E0;
-  --gray-400: #A0AEC0;
-  --gray-500: #718096;
-  --gray-600: #4A5568;
-  --gray-700: #2D3748;
-  --gray-800: #1A202C;
-  --gray-900: #171923;
-  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
-  --border-radius: 8px;
-  --border-radius-lg: 12px;
-  --border-radius-xl: 16px;
-  --transition: all 0.3s ease;
+  --primary-color: #F8BBD9; /* soft pink */
+  --primary-dark: #C2185B;
+  --secondary-color: #FCE4EC;
+  --accent-color: #CE93D8; /* lavender */
+  --text-primary: #4A4A4A;
+  --text-secondary: #6B6B6B;
+  --text-light: #8B8B8B;
+  --white: #fff;
+  --pink-light: #FCE4EC;
+  --pink-medium: #F8BBD9;
+  --pink-dark: #F48FB1;
+  --purple-light: #F3E5F5;
+  --purple-medium: #E1BEE7;
+  --purple-dark: #CE93D8;
+  --lavender: #E6E6FA;
+  --mauve: #E0B0FF;
+  --gray-50: #FDF8FD;
+  --gray-100: #f7fafc;
+  --gray-200: #edf2f7;
+  --gray-300: #E6D7E6;
+  --gray-400: #D4C4D4;
+  --gray-500: #B8A8B8;
+  --gray-600: #9A8A9A;
+  --gray-700: #7A6A7A;
+  --gray-800: #5A4A5A;
+  --gray-900: #3A2A3A;
+  --shadow-sm: 0 2px 4px 0 rgba(156, 39, 176, 0.1);
+  --shadow-md: 0 4px 8px -1px rgba(156, 39, 176, 0.15), 0 2px 4px -1px rgba(156, 39, 176, 0.1);
+  --shadow-lg: 0 10px 20px -3px rgba(156, 39, 176, 0.2), 0 4px 8px -2px rgba(156, 39, 176, 0.1);
+  --shadow-xl: 0 8px 32px 0 rgba(233, 30, 99, 0.12);
+  --border-radius: 12px;
+  --border-radius-lg: 16px;
+  --border-radius-xl: 2rem;
+  --transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  --blue-accent: #6EC6FF; /* pastel blue from image */
+  --yellow-accent: #FFF176; /* pastel yellow from image */
+  --cream: #FFFDE7; /* soft cream */
+  --flower-pink: #F06292; /* flower pink */
+  --flower-blue: #4FC3F7; /* blue from image */
+  --flower-yellow: #FFD54F; /* yellow from image */
 }
 
 /* Typography */
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, .hero-title, .section-title {
+  font-family: 'Poppins', Arial, sans-serif;
+  letter-spacing: 0.5px;
   font-weight: 600;
   line-height: 1.2;
   margin-bottom: 1rem;
@@ -103,30 +136,36 @@ a:hover {
 }
 
 /* Button Styles */
+.btn, .feature-card, .product-card, .navbar, .footer {
+  font-family: 'Nunito', 'Inter', Arial, sans-serif;
+}
+
 .btn {
   display: inline-flex;
   align-items: center;
-  justify-content: center;
-  padding: 0.75rem 1.5rem;
-  border-radius: var(--border-radius);
-  font-weight: 500;
-  text-decoration: none;
-  transition: var(--transition);
-  cursor: pointer;
+  gap: 0.5rem;
+  padding: 0.75rem 2rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: var(--border-radius-lg);
   border: none;
-  outline: none;
-  font-size: 1rem;
+  background: var(--pink-light);
+  color: var(--primary-color);
+  box-shadow: var(--shadow-md);
+  cursor: pointer;
+  transition: var(--transition);
 }
 
 .btn-primary {
-  background-color: var(--primary-color);
-  color: var(--white);
+  background: var(--cream);
+  color: var(--accent-color);
+  border: 2px solid var(--accent-color);
 }
 
-.btn-primary:hover {
-  background-color: var(--primary-dark);
-  transform: translateY(-2px);
-  box-shadow: var(--shadow-lg);
+.btn-primary:hover, .btn:hover {
+  background: var(--yellow-accent);
+  color: var(--flower-pink);
+  border-color: var(--flower-pink);
 }
 
 .btn-secondary {
@@ -142,29 +181,49 @@ a:hover {
 }
 
 .btn-outline {
-  background-color: transparent;
-  color: var(--primary-color);
-  border: 2px solid var(--primary-color);
+  background: transparent;
+  color: var(--accent-color);
+  border: 2px solid var(--accent-color);
+  box-shadow: none;
+  transition: var(--transition);
 }
 
 .btn-outline:hover {
-  background-color: var(--primary-color);
-  color: var(--white);
-  transform: translateY(-2px);
-  box-shadow: var(--shadow-lg);
+  background: var(--pink-light);
+  color: var(--flower-pink);
+  border-color: var(--flower-pink);
 }
 
 /* Card Styles */
 .card {
-  background: var(--white);
+  background: linear-gradient(145deg, var(--white) 0%, var(--pink-light) 100%);
   border-radius: var(--border-radius-lg);
   box-shadow: var(--shadow-md);
   overflow: hidden;
+  transition: var(--transition);
+  border: 1px solid var(--gray-200);
+  position: relative;
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--primary-color), var(--accent-color), var(--mauve));
+  opacity: 0;
   transition: var(--transition);
 }
 
 .card:hover {
   box-shadow: var(--shadow-lg);
+  transform: translateY(-4px);
+}
+
+.card:hover::before {
+  opacity: 1;
 }
 
 /* Section Styles */

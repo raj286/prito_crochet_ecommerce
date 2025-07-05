@@ -6,11 +6,11 @@ export const products = [
     category: "Home Decor",
     description: "A beautiful handcrafted blanket perfect for cold winter nights. Made with premium acrylic yarn in soft pastel colors.",
     longDescription: "This cozy winter blanket is handcrafted with love using premium acrylic yarn. The intricate pattern creates a beautiful texture that's both visually appealing and incredibly soft to the touch. Perfect for snuggling up on the couch or adding warmth to your bedroom. Available in soft pastel colors that complement any home decor.",
-    image: "https://images.unsplash.com/photo-1582735689369-4fe89db7114c?w=400&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1544966503-7cc5ac882d5f?w=400&h=400&fit=crop",
     images: [
+      "https://images.unsplash.com/photo-1544966503-7cc5ac882d5f?w=400&h=400&fit=crop",
       "https://images.unsplash.com/photo-1582735689369-4fe89db7114c?w=400&h=400&fit=crop",
-      "https://images.unsplash.com/photo-1582735689369-4fe89db7114c?w=400&h=400&fit=crop",
-      "https://images.unsplash.com/photo-1582735689369-4fe89db7114c?w=400&h=400&fit=crop"
+      "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&h=400&fit=crop"
     ],
     colors: ["Pink", "Blue", "Gray", "White"],
     materials: ["Premium Acrylic Yarn"],
@@ -28,7 +28,7 @@ export const products = [
     image: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&h=400&fit=crop",
     images: [
       "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&h=400&fit=crop",
-      "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&h=400&fit=crop"
+      "https://images.unsplash.com/photo-1582735689369-4fe89db7114c?w=400&h=400&fit=crop"
     ],
     colors: ["White", "Pink", "Blue", "Yellow"],
     materials: ["Cotton Yarn"],
@@ -60,9 +60,9 @@ export const products = [
     category: "Accessories",
     description: "Warm and stylish scarf and hat set perfect for winter. Made with soft wool blend yarn.",
     longDescription: "Stay warm and stylish with this matching scarf and hat set. Crafted with a soft wool blend yarn that provides excellent warmth while remaining comfortable against your skin. The scarf features a beautiful cable pattern, while the hat includes a cozy brim that can be worn up or down. Perfect for winter weather.",
-    image: "https://images.unsplash.com/photo-1582735689369-4fe89db7114c?w=400&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1544966503-7cc5ac882d5f?w=400&h=400&fit=crop",
     images: [
-      "https://images.unsplash.com/photo-1582735689369-4fe89db7114c?w=400&h=400&fit=crop"
+      "https://images.unsplash.com/photo-1544966503-7cc5ac882d5f?w=400&h=400&fit=crop"
     ],
     colors: ["Navy", "Gray", "Burgundy", "Forest Green"],
     materials: ["Wool Blend Yarn"],
@@ -77,9 +77,9 @@ export const products = [
     category: "Home Decor",
     description: "Elegant macrame-style plant hanger for your indoor plants. Adds a bohemian touch to any room.",
     longDescription: "This elegant plant hanger combines crochet techniques with macrame-style design to create a beautiful home for your indoor plants. The sturdy construction can hold pots up to 8 inches in diameter, and the adjustable length allows you to hang plants at the perfect height. Adds a bohemian touch to any room while keeping your plants healthy and happy.",
-    image: "https://images.unsplash.com/photo-1582735689369-4fe89db7114c?w=400&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&h=400&fit=crop",
     images: [
-      "https://images.unsplash.com/photo-1582735689369-4fe89db7114c?w=400&h=400&fit=crop"
+      "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&h=400&fit=crop"
     ],
     colors: ["Natural", "White", "Gray"],
     materials: ["Cotton Rope"],
@@ -111,9 +111,9 @@ export const products = [
     category: "Home Decor",
     description: "Set of 6 decorative coasters with beautiful crochet patterns. Protects surfaces while adding style.",
     longDescription: "Protect your surfaces while adding style with this set of 6 decorative coasters. Each coaster features a unique crochet pattern and is backed with a non-slip material to keep them in place. Made with cotton yarn for absorbency and easy cleaning. Perfect for coffee tables, dining tables, or as a thoughtful gift.",
-    image: "https://images.unsplash.com/photo-1582735689369-4fe89db7114c?w=400&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1544966503-7cc5ac882d5f?w=400&h=400&fit=crop",
     images: [
-      "https://images.unsplash.com/photo-1582735689369-4fe89db7114c?w=400&h=400&fit=crop"
+      "https://images.unsplash.com/photo-1544966503-7cc5ac882d5f?w=400&h=400&fit=crop"
     ],
     colors: ["White", "Cream", "Gray"],
     materials: ["Cotton Yarn", "Non-slip backing"],
@@ -128,9 +128,9 @@ export const products = [
     category: "Accessories",
     description: "Eco-friendly reusable market bag. Strong and stretchy, perfect for groceries or beach trips.",
     longDescription: "Go green with this eco-friendly reusable market bag! Made with strong cotton yarn that stretches to accommodate your groceries while maintaining its shape. The reinforced handles ensure comfortable carrying even when the bag is full. Perfect for grocery shopping, beach trips, or any outing where you need a reliable bag. Folds up small for easy storage.",
-    image: "https://images.unsplash.com/photo-1582735689369-4fe89db7114c?w=400&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&h=400&fit=crop",
     images: [
-      "https://images.unsplash.com/photo-1582735689369-4fe89db7114c?w=400&h=400&fit=crop"
+      "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&h=400&fit=crop"
     ],
     colors: ["Natural", "Navy", "Forest Green", "Burgundy"],
     materials: ["Cotton Yarn"],
@@ -162,9 +162,9 @@ export const products = [
     category: "Accessories",
     description: "Cute crochet phone case cover. Protects your phone while adding a personal touch.",
     longDescription: "Protect your phone while adding a personal touch with this cute crochet phone case cover. The stretchy design fits most phone sizes and includes a button closure for security. Made with soft acrylic yarn that won't scratch your device. Available in various colors to match your style. Perfect for adding a handmade touch to your everyday essentials.",
-    image: "https://images.unsplash.com/photo-1582735689369-4fe89db7114c?w=400&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1544966503-7cc5ac882d5f?w=400&h=400&fit=crop",
     images: [
-      "https://images.unsplash.com/photo-1582735689369-4fe89db7114c?w=400&h=400&fit=crop"
+      "https://images.unsplash.com/photo-1544966503-7cc5ac882d5f?w=400&h=400&fit=crop"
     ],
     colors: ["Pink", "Blue", "Purple", "Gray", "Black"],
     materials: ["Acrylic Yarn"],
@@ -179,9 +179,9 @@ export const products = [
     category: "Home Decor",
     description: "Decorative throw pillow cover with beautiful crochet pattern. Adds texture and warmth to any room.",
     longDescription: "Add texture and warmth to any room with this decorative throw pillow cover. The beautiful crochet pattern creates visual interest while the soft acrylic yarn provides comfort. The envelope-style closure makes it easy to insert and remove your pillow insert. Available in various colors to complement any home decor style.",
-    image: "https://images.unsplash.com/photo-1582735689369-4fe89db7114c?w=400&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&h=400&fit=crop",
     images: [
-      "https://images.unsplash.com/photo-1582735689369-4fe89db7114c?w=400&h=400&fit=crop"
+      "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&h=400&fit=crop"
     ],
     colors: ["Cream", "Gray", "Navy", "Sage Green"],
     materials: ["Acrylic Yarn"],

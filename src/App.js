@@ -52,6 +52,9 @@ function App() {
   return (
     <Router>
       <div className="App">
+        {/* Floating cute elements */}
+        {/* Removed global floating elements; now only on Home page */}
+        
         <Navbar 
           cartCount={cartCount} 
           onCartClick={() => setIsCartOpen(true)}

@@ -1,6 +1,66 @@
-# Prito's Crochet - Modern React Website
+# Prito's Crochet E-Commerce Website
 
-A beautiful, modern, and responsive React website for a crochet business. Built with modern web technologies and featuring a complete e-commerce experience.
+A cozy, modern React-based e-commerce site for handcrafted crochet items, with a Node.js/Express backend for product data and contact form email support.
+
+## Features
+- Beautiful pastel and 3D animated UI
+- Responsive design for mobile and desktop
+- Floating, animated elements (flowers, sparkles, etc.)
+- Animated smoke fade-in on page load
+- Product catalog and cart
+- Contact form with email sending (via backend)
+- Easy to customize and extend
+
+## Getting Started
+
+### Prerequisites
+- Node.js (v14+ recommended)
+- npm
+
+### 1. Clone the Repository
+```bash
+git clone <your-repo-url>
+cd crochet
+```
+
+### 2. Install Frontend Dependencies
+```bash
+npm install
+```
+
+### 3. Start the Frontend
+```bash
+npm start
+```
+The app will run at [http://localhost:3000](http://localhost:3000)
+
+### 4. Set Up the Backend
+```bash
+cd backend
+npm install
+```
+
+#### Configure Email (Contact Form)
+- In `backend/index.js`, replace `YOUR_EMAIL@gmail.com` and `YOUR_EMAIL_PASSWORD_OR_APP_PASSWORD` with your real Gmail and [App Password](https://support.google.com/accounts/answer/185833?hl=en).
+
+### 5. Start the Backend
+```bash
+node index.js
+```
+The backend will run at [http://localhost:5000](http://localhost:5000)
+
+## Usage
+- Browse products, add to cart, and checkout (frontend only)
+- Use the contact form to send messages to your email (via backend)
+- All pages feature smooth animations and are mobile-friendly
+
+## Customization
+- Add your own products in `src/data/products.js` or connect to a real database
+- Change images by placing them in `public/` or `src/assets/`
+- Tweak colors and animations in the CSS files
+
+## License
+MIT
 
 ## 🎨 Features
 
